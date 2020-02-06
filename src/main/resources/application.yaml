@@ -6,8 +6,13 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+
   datasource:
-    url: jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=interactive
+    url: jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=crudData
     username: devSchemaManager
     password: s3cretPassword
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
