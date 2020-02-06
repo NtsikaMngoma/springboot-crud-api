@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=interactive
+    username: devSchemaManager
+    password: s3cretPassword
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
